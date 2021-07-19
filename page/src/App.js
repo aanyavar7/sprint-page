@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Navbar from 'react-bootstrap/Navbar';
+import {NavBar, Nav, Dropdown} from 'react-bootstrap';
+import { Container } from 'react-layout-components';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+    <Dropdown className = "Behind-Button">
+      <Dropdown.Toggle variant="secondary" size = "lg" className = "Button">
+        BUTTON!!!!!
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu className = "Menu">
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
+      {/* <header className="App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          YO YO YO :) Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </header>  */}
     </div>
   );
 }
