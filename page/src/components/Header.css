@@ -1,0 +1,45 @@
+
+/* dropdown */
+.Menu {
+  border-radius: 0;
+  color: white;
+  padding: 10px 10px;
+  background: red!important;
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.Behind-Button {
+  padding-bottom: 85px;
+  background-color: rgb(216, 145, 216)!important;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: left;
+  margin-top: -75px;
+  margin-left: 130px;
+}
+
+.Button{
+  font-weight: bold;
+  float: left;
+  padding: 10px 10px;
+  background-color: rgb(216, 145, 216)!important;
+  font-size: 28px;
+  margin-right: auto;
+  margin-top: 0;
+  display:block;
+  border: 0px;
+}
+
+.qButton {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  font-size:18px;
+  margin-top:-60px;
+  float:right;
+  margin-right: 30px;
+}
