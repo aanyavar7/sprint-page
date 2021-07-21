@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Box from '@material-ui/core/Box';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
-import BI360 from "../BI360.js";
+import BI360 from "../BI360";
 
 const MenuBox = () => {
     return (
@@ -10,7 +10,7 @@ const MenuBox = () => {
              <Box color="black" bgcolor="pink" p={1}>
                 <h2>
                 
-        <Link to= "../BI360"> BI360 <br/> <br/></Link>
+        <Link to= "/BI360"> BI360 <br/> <br/></Link>
                 FUSION <br/> <br/>
                 Hero <br/> <br/>
                 Labyrinth <br/> <br/>
