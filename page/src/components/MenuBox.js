@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import Box from '@material-ui/core/Box';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
-import BI360 from "../BI360";
+import BI360 from "../BI360.js";
+import Landing from "../Landing.js";
+import "./Menu.css"
 
 const MenuBox = () => {
     return (
         <Router>
-        <div style={{ float: 'left', marginTop: '-15px', width: '140px', height: '800px' }}>
-             <Box color="black" bgcolor="pink" p={1}>
-                <h2>
+            <div>
+            <Link to="/">SOMETHING <br/></Link>
+            <Link to="/BI360">BI360</Link>
+            </div>
+
+                {/*<h2>
                 
-        <Link to= "/BI360"> BI360 <br/> <br/></Link>
+        <Link to= "/BI360"> BI360sdf <br/> <br/></Link>
                 FUSION <br/> <br/>
                 Hero <br/> <br/>
                 Labyrinth <br/> <br/>
@@ -21,15 +26,19 @@ const MenuBox = () => {
                 RADAR <br/> <br/>
                 SCA <br/> <br/>
                 SMMI 
-                </h2>
-             </Box>
-         </div>
-         <Switch>
-             <Route path = "/BI360" exact>
-                 <BI360 />
-             </Route>
-         </Switch>
-         </Router>
+                </h2>*/}
+
+    <Switch>
+      <Route path="/" exact>
+        <Landing />
+      </Route>
+
+      <Route path="/BI360" exact>
+        <BI360 />
+      </Route>
+
+    </Switch>
+    </Router>
     );
 }
 export default MenuBox;
