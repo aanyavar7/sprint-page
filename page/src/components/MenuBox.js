@@ -5,13 +5,12 @@ import BI360 from "../BI360.js";
 
 const MenuBox = () => {
     return (
+        <Router>
         <div style={{ float: 'left', marginTop: '-15px', width: '140px', height: '800px' }}>
              <Box color="black" bgcolor="pink" p={1}>
                 <h2>
-                <Router>
-        <Link to= "../BI360.js"> BI360 <br/> <br/></Link>
-        <Route path= "../BI360.js" component={BI360} />
-    </Router>
+                
+        <Link to= "../BI360"> BI360 <br/> <br/></Link>
                 FUSION <br/> <br/>
                 Hero <br/> <br/>
                 Labyrinth <br/> <br/>
@@ -25,6 +24,12 @@ const MenuBox = () => {
                 </h2>
              </Box>
          </div>
+         <Switch>
+             <Route path = "/BI360" exact>
+                 <BI360 />
+             </Route>
+         </Switch>
+         </Router>
     );
 }
 export default MenuBox;
