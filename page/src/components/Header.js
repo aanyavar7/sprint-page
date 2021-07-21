@@ -7,14 +7,14 @@ import MenuBox from './MenuBox';
 const Header = () => {
     const [isQClicked, setQClicked] = useState(false);
     const [isMClicked, setMClicked] = useState(false);
-    const [qColor, setQColor] = useState('pink');
-    const [mColor, setMColor] = useState('rgb(216, 145, 216)');
+    const [qColor, setQColor] = useState('white');
+    const [mColor, setMColor] = useState('white');
 
     const mColorHandler = () => {
-      if(mColor == 'rgb(216, 145, 216)'){
+      if(mColor === 'rgb(216, 145, 216)'){
         setMColor('white');
       }
-      if(mColor == 'white'){
+      if(mColor === 'white'){
         setMColor('rgb(216, 145, 216)');
       }
     }
@@ -27,11 +27,11 @@ const Header = () => {
     }
 
     const qColorHandler = () => {
-      if(qColor == 'red'){
+      if(qColor === 'white'){
         setQColor('pink');
       }
-      if(qColor == 'pink'){
-        setQColor('red');
+      if(qColor === 'pink'){
+        setQColor('white');
       }
 };
 
