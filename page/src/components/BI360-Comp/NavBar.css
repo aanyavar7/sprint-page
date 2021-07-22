@@ -46,3 +46,15 @@
     border-bottom-color: red !important;
     color: dimgray;
   }
+
+  .box {
+    width: 1300px;
+    height: 800px;
+    margin-right: 80px;
+    border: solid 1px purple;
+    z-index: -1000;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    left: -250px;
+  };

@@ -1,33 +1,20 @@
 import React, { Component, useState } from 'react'
 import { BrowserRouter, Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import QuestionBox from "./components/QuestionBox.js"
+import Question from "./components/Question.js"
+import NavBar from "./components/FUSION-Comp/NavBar.js"
 
 const FUSION = () => {
-    const [isQClicked, setQClicked] = useState(false);
-    const [qColor, setQColor] = useState('white');
-
-    const qHandler = () => {
-        setQClicked(!isQClicked);
-    }
-
-    const qColorHandler = () => {
-        if(qColor === 'white'){
-          setQColor('pink');
-        }
-        if(qColor === 'pink'){
-          setQColor('white');
-        }
-    }
     return (
-        <div>
-      <h1>FUSION</h1>
-      <div>
-            <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button>
-        </div>
-        {isQClicked && (
-        <QuestionBox />
-        )}
-    </div>
+      <div style={{paddingLeft: 90}}>
+      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: 'darkmagenta'}}>
+       <h1>FUSION</h1>
+     </div>
+     <div>
+     <Question />
+     </div>
+     <NavBar />
+   </div>
     );
 }
 

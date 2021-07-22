@@ -52,13 +52,13 @@ const App = () => {
     <div className = "App">
       <Router>
       <div>
-           <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link>
+           {/* <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link> */}
         </div>
-        {isQClicked && (
+        {/* {isQClicked && (
         <Route path="/Help" exact>
         <Help />
-      </Route>
-        )}
+      </Route> }
+        )*/}
       
       <button onClick = {mHandler}>
       <hr className = "menuLine"></hr>

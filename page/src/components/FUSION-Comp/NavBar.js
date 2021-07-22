@@ -1,6 +1,13 @@
 import "./NavBar.css";
-import QuestionBox from './QuestionBox.js'
-import DataBox from './DataBox.js'
+import {SprintBox, 
+        ReleaseBox,
+        EffortBox,
+        BlockerBox,
+        KPIBox,
+        NPSBox,
+        TargetBox,
+        HappBox
+        } from './DataBox.js'
 import React, { useState } from "react";
 
 /* 
@@ -17,7 +24,6 @@ Happiness
 const NavBar = () => {
   const [isSprint, setSprint] = useState(true);
   const [isRelease, setRelease] = useState(false);
-  const [isEffort, setEffort] = useState(false);
   const [isBlocker, setBlocker] = useState(false);
   const [isKPI, setKPI] = useState(false);
   const [isNPS, setNPS] = useState(false);
@@ -26,7 +32,6 @@ const NavBar = () => {
 
   const [sprintColor, setSprintColor] = useState("#f0dcfc");
   const [releaseColor, setReleaseColor] = useState("white");
-  const [effortColor, setEffortColor] = useState("white");
   const [blockerColor, setBlockerColor] = useState("white");
   const [KPIColor, setKPIColor] = useState("white");
   const [NPSColor, setNPSColor] = useState("white");
@@ -35,7 +40,6 @@ const NavBar = () => {
 
   const [sprintBorder, setSprintBorder] = useState("2px");
   const [releaseBorder, setReleaseBorder] = useState("0px");
-  const [effortBorder, setEffortBorder] = useState("0px");
   const [blockerBorder, setBlockerBorder] = useState("0px");
   const [KPIBorder, setKPIBorder] = useState("0px");
   const [NPSBorder, setNPSBorder] = useState("0px");
@@ -44,7 +48,6 @@ const NavBar = () => {
 
   const [sprintFont, setSprintFont] = useState("#561B8E");
   const [releaseFont, setReleaseFont] = useState("dimgray");
-  const [effortFont, setEffortFont] = useState("dimgray");
   const [blockerFont, setBlockerFont] = useState("dimgray");
   const [KPIFont, setKPIFont] = useState("dimgray");
   const [NPSFont, setNPSFont] = useState("dimgray");
@@ -56,7 +59,6 @@ const NavBar = () => {
 
     setRelease(false);
     setTarget(false);
-    setEffort(false);
     setBlocker(false);
     setKPI(false);
     setNPS(false);
@@ -66,7 +68,6 @@ const NavBar = () => {
     if (sprintColor == "white") {
       setSprintColor("#f0dcfc");
       setReleaseColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setKPIColor("white");
       setNPSColor("white");
@@ -75,7 +76,6 @@ const NavBar = () => {
 
       setSprintBorder("2px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
       setNPSBorder("0px");
@@ -85,7 +85,6 @@ const NavBar = () => {
       setSprintFont("#561B8E");
 
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
       setNPSFont("dimgray");
@@ -104,7 +103,6 @@ const NavBar = () => {
 
     setSprint(false);
     setTarget(false);
-    setEffort(false);
     setBlocker(false);
     setKPI(false);
     setNPS(false);
@@ -115,7 +113,6 @@ const NavBar = () => {
       setReleaseColor("#f0dcfc");
 
       setSprintColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setKPIColor("white");
       setNPSColor("white");
@@ -125,7 +122,6 @@ const NavBar = () => {
       setReleaseBorder("2px");
 
       setSprintBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
       setNPSBorder("0px");
@@ -135,7 +131,6 @@ const NavBar = () => {
       setReleaseFont("#561B8E");
 
       setSprintFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
       setNPSFont("dimgray");
@@ -149,63 +144,11 @@ const NavBar = () => {
     }
   };
 
-  const effortHandler = () => {
-    setEffort(!isEffort);
-
-    setSprint(false);
-    setRelease(false);
-    setTarget(false);
-    setBlocker(false);
-    setKPI(false);
-    setNPS(false);
-    setTarget(false);
-    setHapp(false);
-
-    if (effortColor == "white") {
-
-      setEffortColor("#f0dcfc");
-
-      setSprintColor("white");
-      setReleaseColor("white");
-      setBlockerColor("white");
-      setKPIColor("white");
-      setNPSColor("white");
-      setTargetColor("white");
-      setHappColor("white");
-
-      setEffortBorder("2px");
-
-      setSprintBorder("0px");
-      setReleaseBorder("0px");
-      setBlockerBorder("0px");
-      setKPIBorder("0px");
-      setNPSBorder("0px");
-      setTargetBorder("0px");
-      setHappBorder("0px");
-
-      setEffortFont("#561B8E");
-    
-      setSprintFont("dimgray");
-      setReleaseFont("dimgray");
-      setBlockerFont("dimgray");
-      setKPIFont("dimgray");
-      setNPSFont("dimgray");
-      setTargetFont("dimgray");
-      setHappFont("dimgray");
-    }
-    if (effortColor == "#f0dcfc") {
-      setEffortColor("white");
-      setEffortBorder("0px");
-      setEffortFont("dimgray");
-    }
-  };
-
   const blockerHandler = () => {
     setBlocker(!isBlocker);
 
     setSprint(false);
     setRelease(false);
-    setEffort(false);
     setTarget(false);
     setKPI(false);
     setNPS(false);
@@ -218,7 +161,6 @@ const NavBar = () => {
 
       setSprintColor("white");
       setReleaseColor("white");
-      setEffortColor("white");
       setKPIColor("white");
       setNPSColor("white");
       setTargetColor("white");
@@ -228,7 +170,6 @@ const NavBar = () => {
 
       setSprintBorder("0px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setKPIBorder("0px");
       setNPSBorder("0px");
       setTargetBorder("0px");
@@ -238,7 +179,6 @@ const NavBar = () => {
     
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setKPIFont("dimgray");
       setNPSFont("dimgray");
       setTargetFont("dimgray");
@@ -256,7 +196,6 @@ const NavBar = () => {
 
     setSprint(false);
     setRelease(false);
-    setEffort(false);
     setTarget(false);
     setBlocker(false);
     setNPS(false);
@@ -269,7 +208,6 @@ const NavBar = () => {
 
       setSprintColor("white");
       setReleaseColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setNPSColor("white");
       setTargetColor("white");
@@ -279,7 +217,6 @@ const NavBar = () => {
 
       setSprintBorder("0px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setNPSBorder("0px");
       setTargetBorder("0px");
@@ -289,7 +226,6 @@ const NavBar = () => {
     
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setNPSFont("dimgray");
       setTargetFont("dimgray");
@@ -307,7 +243,6 @@ const NavBar = () => {
 
     setSprint(false);
     setRelease(false);
-    setEffort(false);
     setTarget(false);
     setBlocker(false);
     setKPI(false);
@@ -320,7 +255,6 @@ const NavBar = () => {
 
       setSprintColor("white");
       setReleaseColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setKPIColor("white");
       setTargetColor("white");
@@ -330,7 +264,6 @@ const NavBar = () => {
 
       setSprintBorder("0px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
       setTargetBorder("0px");
@@ -340,7 +273,6 @@ const NavBar = () => {
     
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
       setTargetFont("dimgray");
@@ -359,7 +291,6 @@ const NavBar = () => {
 
     setSprint(false);
     setRelease(false);
-    setEffort(false);
     setBlocker(false);
     setKPI(false);
     setNPS(false);
@@ -371,7 +302,6 @@ const NavBar = () => {
 
       setSprintColor("white");
       setReleaseColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setKPIColor("white");
       setNPSColor("white");
@@ -381,7 +311,6 @@ const NavBar = () => {
 
       setSprintBorder("0px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
       setNPSBorder("0px");
@@ -391,7 +320,6 @@ const NavBar = () => {
 
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
       setNPSFont("dimgray");
@@ -410,7 +338,6 @@ const NavBar = () => {
 
     setSprint(false);
     setRelease(false);
-    setEffort(false);
     setBlocker(false);
     setKPI(false);
     setNPS(false);
@@ -422,7 +349,6 @@ const NavBar = () => {
 
       setSprintColor("white");
       setReleaseColor("white");
-      setEffortColor("white");
       setBlockerColor("white");
       setKPIColor("white");
       setNPSColor("white");
@@ -432,7 +358,6 @@ const NavBar = () => {
 
       setSprintBorder("0px");
       setReleaseBorder("0px");
-      setEffortBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
       setNPSBorder("0px");
@@ -442,7 +367,6 @@ const NavBar = () => {
 
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
-      setEffortFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
       setNPSFont("dimgray");
@@ -469,7 +393,7 @@ const NavBar = () => {
         >
           SPRINTS
         </button>
-        {isSprint && <DataBox />}
+        {isSprint && <SprintBox />}
 
         <button
           style={{
@@ -482,20 +406,7 @@ const NavBar = () => {
         >
           RELEASE
         </button>
-        {isRelease && <DataBox />}
-
-        <button
-          style={{
-            backgroundColor: effortColor,
-            borderBottomWidth: effortBorder,
-            color: effortFont, 
-          }}
-          onClick={effortHandler}
-          className="targetButton"
-        >
-          EFFORT
-        </button>
-        {isEffort && <DataBox />}
+        {isRelease && <ReleaseBox />}
 
         <button
           style={{
@@ -508,7 +419,7 @@ const NavBar = () => {
         >
           BLOCKERS
         </button>
-        {isBlocker && <DataBox />}
+        {isBlocker && <BlockerBox />}
 
           <button
           style={{
@@ -521,7 +432,7 @@ const NavBar = () => {
         >
           KPIs
         </button>
-        {isKPI && <DataBox />}
+        {isKPI && <KPIBox />}
 
         <button
           style={{
@@ -534,7 +445,7 @@ const NavBar = () => {
         >
           NPS
         </button>
-        {isNPS && <DataBox />}
+        {isNPS && <NPSBox />}
 
         <button
           style={{
@@ -547,7 +458,7 @@ const NavBar = () => {
         >
           TARGETS
         </button>
-        {isTarget && <DataBox />}
+        {isTarget && <TargetBox />}
 
         <button
           style={{
@@ -560,7 +471,7 @@ const NavBar = () => {
         >
           HAPPINESS
         </button>
-        {isHapp && <DataBox />}
+        {isHapp && <HappBox />}
 
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { Component, useState } from 'react'
 import { BrowserRouter, Router, Route, Link, Switch, Redirect } from 'react-router-dom';
-import QuestionBox from "./components/QuestionBox.js"
 
 const Help = () => {
     const [isQClicked, setQClicked] = useState(false);
@@ -22,13 +21,15 @@ const Help = () => {
   return (
     <div>
       <h1>Help Page</h1>
-      <h3>YOOOOOOOO</h3>
+      <div style={{width: 1000, height: 500, backgroundColor: 'red'}}></div>
+
+      <h4> HELLLLLOOOOOOOOOOOO </h4>
       <div>
-            <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button>
+            {/* <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button> */}
         </div>
-        {isQClicked && (
+        {/* {isQClicked && (
         <QuestionBox />
-        )}
+        )} */}
     </div>
   );
 }
