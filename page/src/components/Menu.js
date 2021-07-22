@@ -1,6 +1,7 @@
 import './Menu.css';
 import {NavBar, Dropdown} from 'react-bootstrap';
 import React, { useState } from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import QuestionBox from './QuestionBox';
 import MenuBox from './MenuBox';
 
@@ -34,7 +35,44 @@ const Menu = () => {
   </div>
 
   {isMClicked && (
-    <MenuBox />
+    <div>
+      <div>
+        <Link to="/"><h2>Sprint Page </h2></Link>
+      </div>
+      <div>
+        <Link to="/BI360"><h2>BI360 </h2></Link>
+      </div>
+      <div>
+        <Link to="/FUSION"><h2>FUSION </h2></Link>
+      </div>
+      <div>
+        <Link to="/Hero"><h2>Hero </h2></Link>
+      </div>
+      <div>
+      <Link to="/Labyrinth"><h2>Labyrinth </h2></Link>
+      </div>
+      <div>
+      <Link to="/Legend"><h2>Legend </h2></Link>
+      </div>
+      <div>
+      <Link to="/LOLA"><h2>LOLA </h2></Link>
+      </div>
+      <div>
+      <Link to="/OnePortal"><h2>OnePortal </h2></Link>
+      </div>
+      <div>
+      <Link to="/PVA"><h2>PVA </h2></Link>
+      </div>
+      <div>
+      <Link to="/RADAR"><h2>RADAR </h2></Link>
+      </div>
+      <div>
+      <Link to="/SCA"><h2>SCA </h2></Link>
+      </div>
+      <div>
+      <Link to="/SMMI"><h2>SMMI </h2></Link>
+      </div>
+    </div>
   )}
 
   </div>

@@ -40,7 +40,9 @@ const Landing = () => {
 
     return (
     <div>
+      <div style={{bottom: '91%', left: 50, position: 'absolute'}}>
         <h1>Sprint Page</h1>
+      </div>
         <div>
             <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button>
         </div>

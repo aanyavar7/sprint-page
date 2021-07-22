@@ -1,0 +1,48 @@
+.targetButton {
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    letter-spacing: 0.2mm;
+    float: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: blueviolet !important;
+    color: dimgray;
+  }
+
+  .sprintButton {
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.2mm;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: blueviolet !important;
+    color: dimgray;
+  }
+
+  .effortButton {
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    letter-spacing: 0.2mm;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: red !important;
+    color: dimgray;
+  }

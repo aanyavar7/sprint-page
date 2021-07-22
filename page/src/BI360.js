@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react'
 import { BrowserRouter, Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import QuestionBox from "./components/QuestionBox.js"
+import NavBar from "./components/NavBar.js"
 import Help from "./Help.js"
 
 const BI360 = () => {
@@ -21,18 +22,20 @@ const BI360 = () => {
     }
 
   return (
-    <div>
-      <h1>BI360</h1>
+    <div style={{paddingLeft: 90}}>
+       <div style={{bottom: '91%', left: 50, position: 'absolute'}}>
+        <h1>Bi360</h1>
+      </div>
       <div>
             <Link to="/Help"><button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link>
         </div>
         {isQClicked && (
-        // <QuestionBox />
         <Help />
       //   <Route path="/Help" exact>
       //   <Help />
       // </Route>
         )}
+      <NavBar />
     </div>
   );
 }

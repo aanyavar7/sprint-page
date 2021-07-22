@@ -19,6 +19,8 @@ import "./App.css";
 const App = () => {
   const [isQClicked, setQClicked] = useState(false);
   const [qColor, setQColor] = useState('white');
+  const [mColor, setMColor] = useState('white');
+  const [isMClicked, setMClicked] = useState(false);
 
     const qHandler = () => {
         setQClicked(!isQClicked);
@@ -33,6 +35,19 @@ const App = () => {
         }
     }
 
+    const mColorHandler = () => {
+      if(mColor == 'rgb(216, 145, 216)'){
+        setMColor('white');
+      }
+      if(mColor == 'white'){
+        setMColor('rgb(216, 145, 216)');
+      }
+    }
+
+    const mHandler = () => {
+      setMClicked(!isMClicked);
+    }
+
   return (
     <div className = "App">
       <Router>
@@ -40,26 +55,58 @@ const App = () => {
            <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link>
         </div>
         {isQClicked && (
-        //<QuestionBox />
         <Route path="/Help" exact>
         <Help />
       </Route>
         )}
-    <div className = "Thing">
-      <Link to="/"><h2>Sprint Page </h2></Link>
-      <Link to="/BI360"><h2>BI360 </h2></Link>
-      <Link to="/FUSION"><h2>FUSION </h2></Link>
-      <Link to="/Hero"><h2>Hero </h2></Link>
-      <Link to="/Labyrinth"><h2>Labyrinth </h2></Link>
-      <Link to="/Legend"><h2>Legend </h2></Link>
-      <Link to="/LOLA"><h2>LOLA </h2></Link>
-      <Link to="/OnePortal"><h2>OnePortal </h2></Link>
-      <Link to="/PVA"><h2>PVA </h2></Link>
-      <Link to="/RADAR"><h2>RADAR </h2></Link>
-      <Link to="/SCA"><h2>SCA </h2></Link>
-      <Link to="/SMMI"><h2>SMMI </h2></Link>
-    </div>
+      
+      <button onClick = {mHandler}>
+      <hr className = "menuLine"></hr>
+      <hr className = "menuLine2"></hr>
+      <hr className = "menuLine3"></hr>
+      </button>
 
+      {isMClicked && (
+        <div style={{marginLeft: -60, paddingTop: 30}}>
+        <div>
+            <Link to="/"><h2>Sprint Page </h2></Link>
+          </div>
+          <div>
+            <Link to="/BI360"><h2>BI360 </h2></Link>
+          </div>
+          <div>
+            <Link to="/FUSION"><h2>FUSION </h2></Link>
+          </div>
+          <div>
+            <Link to="/Hero"><h2>Hero </h2></Link>
+          </div>
+          <div>
+          <Link to="/Labyrinth"><h2>Labyrinth </h2></Link>
+          </div>
+          <div>
+          <Link to="/Legend"><h2>Legend </h2></Link>
+          </div>
+          <div>
+          <Link to="/LOLA"><h2>LOLA </h2></Link>
+          </div>
+          <div>
+          <Link to="/OnePortal"><h2>OnePortal </h2></Link>
+          </div>
+          <div>
+          <Link to="/PVA"><h2>PVA </h2></Link>
+          </div>
+          <div>
+          <Link to="/RADAR"><h2>RADAR </h2></Link>
+          </div>
+          <div>
+          <Link to="/SCA"><h2>SCA </h2></Link>
+          </div>
+          <div>
+          <Link to="/SMMI"><h2>SMMI </h2></Link>
+          </div>
+      </div>
+      )}
+    
     <Switch>
       <Route path="/" exact>
         <Landing />
