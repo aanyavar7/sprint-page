@@ -2,7 +2,6 @@ import React, { Component, useState } from 'react'
 import { BrowserRouter, Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import QuestionBox from "./components/QuestionBox.js"
 import NavBar from "./components/BI360-Comp/NavBar.js"
-import Login from "./components/Login.js"
 import Help from "./Help.js"
 import Question from "./components/Question.js"
 import "./App.css"
@@ -18,9 +17,6 @@ const BI360 = () => {
       <Question />
       </div>
       <NavBar />
-      <div>
-        <Login />
-        </div>
     </div>
   );
 }

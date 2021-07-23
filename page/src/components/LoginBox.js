@@ -2,8 +2,8 @@ import React from 'react';
 
 const LoginBox = () => {
     return(
-    <div style = {{float: 'right', marginRight: '300px', marginTop: '100px',backgroundColor: 'white', height: '400px', width: '400px', border: 'solid 2px darkmagenta'}}>
-            <h4> password: </h4>
+    <div style = {{float: 'right', marginRight: '300px', marginTop: '100px',backgroundColor: 'white', height: '200px', width: '200px', border: 'solid 1px darkmagenta'}}>
+            <h4> Now can continue to enter work  </h4>
         </div>
     );
 }
