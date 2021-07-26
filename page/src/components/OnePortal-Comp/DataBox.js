@@ -29,7 +29,7 @@ const BlockerBox = () => {
   const[eColor, setEColor] = useState('white');
   const [corrPassword, setPassword] = useState(false);
   const password = 'beertech2021!!!';
-
+  
   const eHandler = () => {
     var userInput = window.prompt("You must be a beertech employee to enter a blocker.\nTo verify your identity, please enter the password:");
 
