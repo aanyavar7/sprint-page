@@ -1,10 +1,10 @@
 h2{
-    text-align: center;
     display:inline;
     font-weight: normal;
     margin-top: 1000px;
     margin-left: 68px;
     font-size: 16px;
+    letter-spacing: 0.1mm;
 }
 
 a {
@@ -61,11 +61,16 @@ Link{
 
   body {
     background-size: cover;
-    background-color: ghostwhite;
+    zoom: 0.95;
+    background-color: white;
   }
 
   .boxShadow {
     box-shadow: 0 1px 1px 0 rgb(118 135 154 / 24%), 0 3px 8px 0 rgb(118 135 154 / 8%);
+  }
+
+  .bShadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
 
   .link:hover { color: darkmagenta!important; }

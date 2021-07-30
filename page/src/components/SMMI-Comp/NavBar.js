@@ -381,7 +381,7 @@ const NavBar = () => {
 
   return (
     <div className="App">
-      <div style={{width: 1000, position: 'absolute', bottom: '88%', left: 390}}>
+      <div style={{width: 1000, position: 'absolute', bottom: '83%', left: 390}}>
         <button
           style={{
             backgroundColor: sprintColor,

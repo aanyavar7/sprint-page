@@ -16,8 +16,13 @@ import "./NavBar.css"
 const SprintBox = () => {
     return (
     <div className="box">
-      <h4>We are on Day 7 of Sprint 16! </h4>
-      <img style={{height: '60%', width: 'auto', marginLeft: 300}} src = {"https://i.ibb.co/Lvs8Qj9/Screen-Shot-2021-07-30-at-1-31-38-AM.png"}></img>
+      <div style={{display: 'flex'}}>
+        <h4>We are on Day</h4>
+        <p>7</p>
+        <h5>of Sprint</h5>
+        <p>16</p>
+      </div>
+      <img style={{height: '60%', width: 'auto', marginLeft: 300}} src = {"https://i.ibb.co/S7dSGwY/Screen-Shot-2021-07-30-at-2-25-51-PM.png"}></img>
     </div>
     );
 };

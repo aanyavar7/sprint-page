@@ -47,6 +47,7 @@ const App = () => {
 
   return (
     <div className = "App">
+      <div style={{backgroundColor: '#f2f3f5', borderRadius: 25, marginTop: 2, width: '120vw', height: 100, marginBottom: 10}}>
       <Router>
       <div>
            {/* <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link> */}
@@ -56,14 +57,13 @@ const App = () => {
         <Help />
       </Route> }
         )*/}
-      
-      <button style = {{backgroundColor: mColor, border: 'none', borderRadius: 100, height: 60, width: 60, marginLeft: 10, marginTop: 20, marginBottom: 10, }} onClick = {mHandler}>
-        <img src= "https://i.ibb.co/WWxQ6Xs/menu-removebg-preview-2.png" alt="menu-removebg-preview-2" alt = "my image" style = {{height: 60, width: 60, marginLeft: -5}}></img>
+      <button className = "bShadow" style = {{backgroundColor: mColor, border: 'none', borderRadius: 100, height: 65, width: 65, marginLeft: 15, marginTop: 20, marginBottom: 10, }} onClick = {mHandler}>
+        <img src= "https://i.ibb.co/WWxQ6Xs/menu-removebg-preview-2.png" alt="menu-removebg-preview-2" alt = "my image" style = {{height: 65, width: 65, marginLeft: -5}}></img>
       </button>
 
       {isMClicked && (
-        <div className = "boxShadow" style={{borderRadius: 25, width: 140, height: 450, paddingTop: 20, marginLeft: 20, marginTop: 3, backgroundColor: '#FFFFFF'}}>
-        <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+        <div className = "boxShadow" style={{borderRadius: 25, width: 160, height: 450, paddingTop: 20, marginLeft: 20, zIndex: 1000, marginTop: -5, paddingHorizontal: 15, backgroundColor: 'white', border: '0.5px solid lightgray'}}>
+        <div style={{marginLeft: -40, marginTop: 10, marginBottom: 10}}>
             <Link className = "link" to="/"><h2>Overall </h2></Link>
           </div>
           <hr className = "boxline" />
@@ -154,7 +154,10 @@ const App = () => {
     </Switch>
     </Router>
   </div>
-    
+
+
+
+      </div>
   );
 }
 

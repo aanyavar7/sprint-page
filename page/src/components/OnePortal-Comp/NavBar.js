@@ -31,12 +31,12 @@ const NavBar = () => {
   const [isHapp, setHapp] = useState(false);
 
   const [sprintColor, setSprintColor] = useState("#f0dcfc");
-  const [releaseColor, setReleaseColor] = useState("ghostwhite");
-  const [blockerColor, setBlockerColor] = useState("ghostwhite");
-  const [KPIColor, setKPIColor] = useState("ghostwhite");
-  const [NPSColor, setNPSColor] = useState("ghostwhite");
-  const [targetColor, setTargetColor] = useState("ghostwhite");
-  const [happColor, setHappColor] = useState("ghostwhite");
+  const [releaseColor, setReleaseColor] = useState("white");
+  const [blockerColor, setBlockerColor] = useState("white");
+  const [KPIColor, setKPIColor] = useState("white");
+  const [NPSColor, setNPSColor] = useState("white");
+  const [targetColor, setTargetColor] = useState("white");
+  const [happColor, setHappColor] = useState("white");
 
   const [sprintBorder, setSprintBorder] = useState("2px");
   const [releaseBorder, setReleaseBorder] = useState("0px");
@@ -65,14 +65,14 @@ const NavBar = () => {
     setTarget(false);
     setHapp(false);
 
-    if (sprintColor == "ghostwhite") {
+    if (sprintColor == "white") {
       setSprintColor("#f0dcfc");
-      setReleaseColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setTargetColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setReleaseColor("white");
+      setBlockerColor("white");
+      setKPIColor("white");
+      setNPSColor("white");
+      setTargetColor("white");
+      setHappColor("white");
 
       setSprintBorder("2px");
       setReleaseBorder("0px");
@@ -92,7 +92,7 @@ const NavBar = () => {
       setHappFont("dimgray");
     }
     if (sprintColor == "#f0dcfc") {
-      setSprintColor("ghostwhite");
+      setSprintColor("white");
       setSprintBorder("0px");
       setSprintFont("dimgray");
     }
@@ -108,16 +108,16 @@ const NavBar = () => {
     setNPS(false);
     setHapp(false);
 
-    if (releaseColor == "ghostwhite") {
+    if (releaseColor == "white") {
 
       setReleaseColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setTargetColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setSprintColor("white");
+      setBlockerColor("white");
+      setKPIColor("white");
+      setNPSColor("white");
+      setTargetColor("white");
+      setHappColor("white");
 
       setReleaseBorder("2px");
 
@@ -138,7 +138,7 @@ const NavBar = () => {
       setHappFont("dimgray");
     }
     if (releaseColor == "#f0dcfc") {
-      setReleaseColor("ghostwhite");
+      setReleaseColor("white");
       setReleaseBorder("0px");
       setReleaseFont("dimgray");
     }
@@ -155,16 +155,16 @@ const NavBar = () => {
     setTarget(false);
     setHapp(false);
 
-    if (blockerColor == "ghostwhite") {
+    if (blockerColor == "white") {
 
       setBlockerColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setReleaseColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setTargetColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setSprintColor("white");
+      setReleaseColor("white");
+      setKPIColor("white");
+      setNPSColor("white");
+      setTargetColor("white");
+      setHappColor("white");
 
       setBlockerBorder("2px");
 
@@ -185,7 +185,7 @@ const NavBar = () => {
       setHappFont("dimgray");
     }
     if (blockerColor == "#f0dcfc") {
-      setBlockerColor("ghostwhite");
+      setBlockerColor("white");
       setBlockerBorder("0px");
       setBlockerFont("dimgray");
     }
@@ -202,16 +202,16 @@ const NavBar = () => {
     setTarget(false);
     setHapp(false);
 
-    if (KPIColor == "ghostwhite") {
+    if (KPIColor == "white") {
 
       setKPIColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setReleaseColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setTargetColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setSprintColor("white");
+      setReleaseColor("white");
+      setBlockerColor("white");
+      setNPSColor("white");
+      setTargetColor("white");
+      setHappColor("white");
 
       setKPIBorder("2px");
 
@@ -232,7 +232,7 @@ const NavBar = () => {
       setHappFont("dimgray");
     }
     if (KPIColor == "#f0dcfc") {
-      setKPIColor("ghostwhite");
+      setKPIColor("white");
       setKPIBorder("0px");
       setKPIFont("dimgray");
     }
@@ -249,16 +249,16 @@ const NavBar = () => {
     setTarget(false);
     setHapp(false);
 
-    if (NPSColor == "ghostwhite") {
+    if (NPSColor == "white") {
 
       setNPSColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setReleaseColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setTargetColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setSprintColor("white");
+      setReleaseColor("white");
+      setBlockerColor("white");
+      setKPIColor("white");
+      setTargetColor("white");
+      setHappColor("white");
 
       setNPSBorder("2px");
 
@@ -279,7 +279,7 @@ const NavBar = () => {
       setHappFont("dimgray");
     }
     if (NPSColor == "#f0dcfc") {
-      setNPSColor("ghostwhite");
+      setNPSColor("white");
       setNPSBorder("0px");
       setNPSFont("dimgray");
     }
@@ -296,16 +296,16 @@ const NavBar = () => {
     setNPS(false);
     setHapp(false);
 
-    if (targetColor == "ghostwhite") {
+    if (targetColor == "white") {
 
       setTargetColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setReleaseColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setHappColor("ghostwhite");
+      setSprintColor("white");
+      setReleaseColor("white");
+      setBlockerColor("white");
+      setKPIColor("white");
+      setNPSColor("white");
+      setHappColor("white");
 
       setTargetBorder("2px");
 
@@ -326,7 +326,7 @@ const NavBar = () => {
       setHappFont("dimgray")
     }
     if (targetColor == "#f0dcfc") {
-      setTargetColor("ghostwhite");
+      setTargetColor("white");
       setTargetBorder("0px");
       setTargetFont("dimgray");
     }
@@ -343,16 +343,16 @@ const NavBar = () => {
     setNPS(false);
     setTarget(false);
 
-    if (happColor == "ghostwhite") {
+    if (happColor == "white") {
 
       setHappColor("#f0dcfc");
 
-      setSprintColor("ghostwhite");
-      setReleaseColor("ghostwhite");
-      setBlockerColor("ghostwhite");
-      setKPIColor("ghostwhite");
-      setNPSColor("ghostwhite");
-      setTargetColor("ghostwhite");
+      setSprintColor("white");
+      setReleaseColor("white");
+      setBlockerColor("white");
+      setKPIColor("white");
+      setNPSColor("white");
+      setTargetColor("white");
 
       setHappBorder("2px");
 
@@ -373,7 +373,7 @@ const NavBar = () => {
       setTargetFont("dimgray")
     }
     if (happColor == "#f0dcfc") {
-      setHappColor("ghostwhite");
+      setHappColor("white");
       setHappBorder("0px");
       setHappFont("dimgray");
     }
@@ -381,7 +381,7 @@ const NavBar = () => {
 
   return (
     <div className="App">
-      <div style={{width: 1000, position: 'absolute', bottom: '90%', left: 420, paddingLeft: 300, marginTop: 80}}>
+      <div style={{width: 1000, position: 'absolute', bottom: '83%', left: 440, paddingLeft: 270, marginTop: 80}}>
         <button
           style={{
             backgroundColor: sprintColor,
