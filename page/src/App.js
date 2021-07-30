@@ -35,17 +35,14 @@ const App = () => {
         }
     }
 
-    const mColorHandler = () => {
-      if(mColor == 'rgb(216, 145, 216)'){
+    const mHandler = () => {
+      setMClicked(!isMClicked);
+      if(mColor == 'darkmagenta'){
         setMColor('white');
       }
       if(mColor == 'white'){
-        setMColor('rgb(216, 145, 216)');
+        setMColor('darkmagenta');
       }
-    }
-
-    const mHandler = () => {
-      setMClicked(!isMClicked);
     }
 
   return (
@@ -60,49 +57,58 @@ const App = () => {
       </Route> }
         )*/}
       
-      <button onClick = {mHandler}>
-      <hr className = "menuLine"></hr>
-      <hr className = "menuLine2"></hr>
-      <hr className = "menuLine3"></hr>
+      <button style = {{backgroundColor: mColor, border: 'none', borderRadius: 100, height: 60, width: 60, marginLeft: 10, marginTop: 20, marginBottom: 10, }} onClick = {mHandler}>
+        <img src= "https://i.ibb.co/WWxQ6Xs/menu-removebg-preview-2.png" alt="menu-removebg-preview-2" alt = "my image" style = {{height: 60, width: 60, marginLeft: -5}}></img>
       </button>
 
       {isMClicked && (
-        <div style={{marginLeft: -60, paddingTop: 30}}>
-        <div>
-            <Link to="/"><h2>Sprint Page </h2></Link>
+        <div className = "boxShadow" style={{borderRadius: 25, width: 140, height: 450, paddingTop: 20, marginLeft: 20, marginTop: 3, backgroundColor: '#FFFFFF'}}>
+        <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+            <Link className = "link" to="/"><h2>Overall </h2></Link>
           </div>
-          <div>
-            <Link to="/BI360"><h2>BI360 </h2></Link>
+          <hr className = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+            <Link className = "link"to="/BI360"><h2>BI360 </h2></Link>
           </div>
-          <div>
-            <Link to="/FUSION"><h2>FUSION </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+            <Link className = "link"to="/FUSION"><h2>FUSION </h2></Link>
           </div>
-          <div>
-            <Link to="/Hero"><h2>Hero </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+            <Link className = "link"to="/Hero"><h2>Hero </h2></Link>
           </div>
-          <div>
-          <Link to="/Labyrinth"><h2>Labyrinth </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/Labyrinth"><h2>Labyrinth </h2></Link>
           </div>
-          <div>
-          <Link to="/Legend"><h2>Legend </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/Legend"><h2>Legend </h2></Link>
           </div>
-          <div>
-          <Link to="/LOLA"><h2>LOLA </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/LOLA"><h2>LOLA </h2></Link>
           </div>
-          <div>
-          <Link to="/OnePortal"><h2>OnePortal </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/OnePortal"><h2>OnePortal </h2></Link>
           </div>
-          <div>
-          <Link to="/PVA"><h2>PVA </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/PVA"><h2>PVA </h2></Link>
           </div>
-          <div>
-          <Link to="/RADAR"><h2>RADAR </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/RADAR"><h2>RADAR </h2></Link>
           </div>
-          <div>
-          <Link to="/SCA"><h2>SCA </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/SCA"><h2>SCA </h2></Link>
           </div>
-          <div>
-          <Link to="/SMMI"><h2>SMMI </h2></Link>
+          <hr class = "boxline" />
+          <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
+          <Link className = "link"to="/SMMI"><h2>SMMI </h2></Link>
           </div>
       </div>
       )}

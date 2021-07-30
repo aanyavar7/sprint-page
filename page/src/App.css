@@ -1,11 +1,16 @@
 h2{
-    color: darkmagenta;
     text-align: center;
     display:inline;
+    font-weight: normal;
     margin-top: 1000px;
     margin-left: 68px;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 pre{
     display:inline;
@@ -46,3 +51,23 @@ Link{
     height: 3px;
     border:none;
   }
+
+  .boxline {
+    background-color: lightgray;
+    height: 1px;
+    border: none;
+    width: 100px;
+  }
+
+  body {
+    background-size: cover;
+    background-color: ghostwhite;
+  }
+
+  .boxShadow {
+    box-shadow: 0 1px 1px 0 rgb(118 135 154 / 24%), 0 3px 8px 0 rgb(118 135 154 / 8%);
+  }
+
+  .link:hover { color: darkmagenta!important; }
+
+  .link:visited { color: black; }

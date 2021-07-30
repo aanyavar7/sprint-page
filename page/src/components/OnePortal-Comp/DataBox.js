@@ -15,7 +15,10 @@ import "./NavBar.css"
 
 const SprintBox = () => {
     return (
-    <div className="box"></div>
+    <div className="box">
+      <h4>We are on Day 7 of Sprint 16! </h4>
+      <img style={{height: '60%', width: 'auto', marginLeft: 300}} src = {"https://i.ibb.co/Lvs8Qj9/Screen-Shot-2021-07-30-at-1-31-38-AM.png"}></img>
+    </div>
     );
 };
 const ReleaseBox = () => {
@@ -46,14 +49,12 @@ const BlockerBox = () => {
     if(eColor === 'white'){
         setEColor('pink');
     }
-
-    // if(eColor === 'pink'){
-    //   setEColor('white');
-    // }
   }
 
   return (
-    <div className="box">
+    <div>
+
+<div className="box">
             <button onClick = {() => {eHandler(); }} style = {{bottom: '91%', right: 50, position: 'absolute', border: '1px solid darkmagenta', 
             fontSize: '18px', height: '40px', width: '200px', backgroundColor: eColor}} className = 'enterButton'> Enter blocker</button>
     <div>
@@ -62,7 +63,14 @@ const BlockerBox = () => {
         <LoginBox /> //blocker form goes here! --> after form is filled then make enter button white again! 
       )}
     </div>
+
+    <div id="dialog" title="Basic dialog">
+<input type="password" size="25" />
+</div>
     
+    </div>
+
+
     </div>
   );
 };
