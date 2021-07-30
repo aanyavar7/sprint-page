@@ -23,6 +23,7 @@ const SprintBox = () => {
         <p>16</p>
       </div>
       <img style={{height: '60%', width: 'auto', marginLeft: 300}} src = {"https://i.ibb.co/S7dSGwY/Screen-Shot-2021-07-30-at-2-25-51-PM.png"}></img>
+
     </div>
     );
 };

@@ -5,20 +5,20 @@ import { Tabs, Tab } from '@material-ui/core'
 import BI360 from "./BI360.js"
 import Question from "./components/Question.js"
 import NavBar from "./components/Landing-Comp/NavBar.js"
+import "./App.css";
 
 const Landing = () => {
-    return (
-      <div style={{paddingLeft: 90}}>
-      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: 'darkmagenta'}}>
-       <h1>Sprint</h1>
-     </div>
-     <div>
-     <Question />
-     </div>
-     <NavBar />
+  return (
+    <div style={{paddingLeft: 90}} className = "bg">
+    <div style={{bottom: '89%', left: 190, position: 'absolute', fontSize: 20, color: 'black', letterSpacing: '0.5mm'}}>
+     <h1>Sprint Page</h1>
    </div>
-    );
+   <div>
+   {/* <Question /> */}
+   </div>
+   <NavBar />
+ </div>
+  );
 }
-
 
 export default Landing;

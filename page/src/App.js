@@ -47,7 +47,7 @@ const App = () => {
 
   return (
     <div className = "App">
-      <div style={{backgroundColor: '#f2f3f5', borderRadius: 25, marginTop: 2, width: '120vw', height: 100, marginBottom: 10}}>
+      <div style={{backgroundColor: '#f3ecf3', borderRadius: 25, marginTop: 2, width: '114vw', height: 100, marginBottom: 10}}>
       <Router>
       <div>
            {/* <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link> */}
