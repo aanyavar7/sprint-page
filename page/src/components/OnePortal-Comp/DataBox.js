@@ -22,7 +22,7 @@ const SprintBox = () => {
         <h5>of Sprint</h5>
         <p>16</p>
       </div>
-      <img style={{height: '60%', width: 'auto', marginLeft: 300}} src = {"https://i.ibb.co/S7dSGwY/Screen-Shot-2021-07-30-at-2-25-51-PM.png"}></img>
+      <img style={{height: '80%', width: '70%', marginLeft: 180}} src = {"https://i.ibb.co/S7dSGwY/Screen-Shot-2021-07-30-at-2-25-51-PM.png"}></img>
 
     </div>
     );
