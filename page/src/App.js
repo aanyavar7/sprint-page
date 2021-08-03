@@ -40,7 +40,7 @@ const App = () => {
       if(mColor == 'darkmagenta'){
         setMColor('white');
       }
-      if(mColor == 'white'){
+      if(mColor != 'darkmagenta') {
         setMColor('darkmagenta');
       }
     }

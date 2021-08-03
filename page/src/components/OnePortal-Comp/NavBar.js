@@ -6,7 +6,7 @@ import {SprintBox,
         KPIBox,
         NPSBox,
         TargetBox,
-        HappBox
+        RevBox  //previously names HappBox!!!
         } from './DataBox.js'
 import React, { useState } from "react";
 
@@ -469,9 +469,9 @@ const NavBar = () => {
           onClick={happHandler}
           className="sprintButton"
         >
-          HAPPINESS
+          REVIEWS
         </button>
-        {isHapp && <HappBox />}
+        {isHapp && <RevBox />}
 
       </div>
     </div>
