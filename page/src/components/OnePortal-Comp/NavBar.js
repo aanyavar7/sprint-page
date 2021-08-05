@@ -4,7 +4,6 @@ import {SprintBox,
         EffortBox,
         BlockerBox,
         KPIBox,
-        NPSBox,
         TargetBox,
         RevBox  //previously names HappBox!!!
         } from './DataBox.js'
@@ -50,7 +49,6 @@ const NavBar = () => {
   const [releaseFont, setReleaseFont] = useState("dimgray");
   const [blockerFont, setBlockerFont] = useState("dimgray");
   const [KPIFont, setKPIFont] = useState("dimgray");
-  const [NPSFont, setNPSFont] = useState("dimgray");
   const [targetFont, setTargetFont] = useState("dimgray");
   const [happFont, setHappFont] = useState("dimgray");
 
@@ -70,7 +68,6 @@ const NavBar = () => {
       setReleaseColor("white");
       setBlockerColor("white");
       setKPIColor("white");
-      setNPSColor("white");
       setTargetColor("white");
       setHappColor("white");
 
@@ -78,7 +75,6 @@ const NavBar = () => {
       setReleaseBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
-      setNPSBorder("0px");
       setTargetBorder("0px");
       setHappBorder("0px");
 
@@ -87,7 +83,6 @@ const NavBar = () => {
       setReleaseFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
-      setNPSFont("dimgray");
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
@@ -105,7 +100,6 @@ const NavBar = () => {
     setTarget(false);
     setBlocker(false);
     setKPI(false);
-    setNPS(false);
     setHapp(false);
 
     if (releaseColor == "white") {
@@ -115,7 +109,6 @@ const NavBar = () => {
       setSprintColor("white");
       setBlockerColor("white");
       setKPIColor("white");
-      setNPSColor("white");
       setTargetColor("white");
       setHappColor("white");
 
@@ -124,7 +117,6 @@ const NavBar = () => {
       setSprintBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
-      setNPSBorder("0px");
       setTargetBorder("0px");
       setHappBorder("0px");
 
@@ -133,7 +125,6 @@ const NavBar = () => {
       setSprintFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
-      setNPSFont("dimgray");
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
@@ -151,7 +142,6 @@ const NavBar = () => {
     setRelease(false);
     setTarget(false);
     setKPI(false);
-    setNPS(false);
     setTarget(false);
     setHapp(false);
 
@@ -162,7 +152,6 @@ const NavBar = () => {
       setSprintColor("white");
       setReleaseColor("white");
       setKPIColor("white");
-      setNPSColor("white");
       setTargetColor("white");
       setHappColor("white");
 
@@ -171,7 +160,6 @@ const NavBar = () => {
       setSprintBorder("0px");
       setReleaseBorder("0px");
       setKPIBorder("0px");
-      setNPSBorder("0px");
       setTargetBorder("0px");
       setHappBorder("0px");
 
@@ -180,7 +168,6 @@ const NavBar = () => {
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
       setKPIFont("dimgray");
-      setNPSFont("dimgray");
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
@@ -198,7 +185,6 @@ const NavBar = () => {
     setRelease(false);
     setTarget(false);
     setBlocker(false);
-    setNPS(false);
     setTarget(false);
     setHapp(false);
 
@@ -209,7 +195,6 @@ const NavBar = () => {
       setSprintColor("white");
       setReleaseColor("white");
       setBlockerColor("white");
-      setNPSColor("white");
       setTargetColor("white");
       setHappColor("white");
 
@@ -218,7 +203,6 @@ const NavBar = () => {
       setSprintBorder("0px");
       setReleaseBorder("0px");
       setBlockerBorder("0px");
-      setNPSBorder("0px");
       setTargetBorder("0px");
       setHappBorder("0px");
 
@@ -227,7 +211,6 @@ const NavBar = () => {
       setSprintFont("dimgray");
       setReleaseFont("dimgray");
       setBlockerFont("dimgray");
-      setNPSFont("dimgray");
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
@@ -235,53 +218,6 @@ const NavBar = () => {
       setKPIColor("white");
       setKPIBorder("0px");
       setKPIFont("dimgray");
-    }
-  };
-
-  const NPSHandler = () => {
-    setNPS(!isNPS);
-
-    setSprint(false);
-    setRelease(false);
-    setTarget(false);
-    setBlocker(false);
-    setKPI(false);
-    setTarget(false);
-    setHapp(false);
-
-    if (NPSColor == "white") {
-
-      setNPSColor("#f0dcfc");
-
-      setSprintColor("white");
-      setReleaseColor("white");
-      setBlockerColor("white");
-      setKPIColor("white");
-      setTargetColor("white");
-      setHappColor("white");
-
-      setNPSBorder("2px");
-
-      setSprintBorder("0px");
-      setReleaseBorder("0px");
-      setBlockerBorder("0px");
-      setKPIBorder("0px");
-      setTargetBorder("0px");
-      setHappBorder("0px");
-
-      setNPSFont("#561B8E");
-    
-      setSprintFont("dimgray");
-      setReleaseFont("dimgray");
-      setBlockerFont("dimgray");
-      setKPIFont("dimgray");
-      setTargetFont("dimgray");
-      setHappFont("dimgray");
-    }
-    if (NPSColor == "#f0dcfc") {
-      setNPSColor("white");
-      setNPSBorder("0px");
-      setNPSFont("dimgray");
     }
   };
 
@@ -293,7 +229,6 @@ const NavBar = () => {
     setRelease(false);
     setBlocker(false);
     setKPI(false);
-    setNPS(false);
     setHapp(false);
 
     if (targetColor == "white") {
@@ -304,7 +239,6 @@ const NavBar = () => {
       setReleaseColor("white");
       setBlockerColor("white");
       setKPIColor("white");
-      setNPSColor("white");
       setHappColor("white");
 
       setTargetBorder("2px");
@@ -313,7 +247,6 @@ const NavBar = () => {
       setReleaseBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
-      setNPSBorder("0px");
       setHappBorder("0px");
 
       setTargetFont("#561B8E");
@@ -322,7 +255,6 @@ const NavBar = () => {
       setReleaseFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
-      setNPSFont("dimgray");
       setHappFont("dimgray")
     }
     if (targetColor == "#f0dcfc") {
@@ -340,7 +272,7 @@ const NavBar = () => {
     setRelease(false);
     setBlocker(false);
     setKPI(false);
-    setNPS(false);
+
     setTarget(false);
 
     if (happColor == "white") {
@@ -351,7 +283,7 @@ const NavBar = () => {
       setReleaseColor("white");
       setBlockerColor("white");
       setKPIColor("white");
-      setNPSColor("white");
+
       setTargetColor("white");
 
       setHappBorder("2px");
@@ -360,7 +292,7 @@ const NavBar = () => {
       setReleaseBorder("0px");
       setBlockerBorder("0px");
       setKPIBorder("0px");
-      setNPSBorder("0px");
+
       setTargetBorder("0px");
 
       setHappFont("#561B8E");
@@ -369,7 +301,7 @@ const NavBar = () => {
       setReleaseFont("dimgray");
       setBlockerFont("dimgray");
       setKPIFont("dimgray");
-      setNPSFont("dimgray");
+
       setTargetFont("dimgray")
     }
     if (happColor == "#f0dcfc") {
@@ -433,19 +365,6 @@ const NavBar = () => {
           KPIs
         </button>
         {isKPI && <KPIBox />}
-
-        <button
-          style={{
-            backgroundColor: NPSColor,
-            borderBottomWidth: NPSBorder,
-            color: NPSFont,
-          }}
-          onClick={NPSHandler}
-          className="targetButton"
-        >
-          NPS
-        </button>
-        {isNPS && <NPSBox />}
 
         <button
           style={{

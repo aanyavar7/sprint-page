@@ -61,38 +61,249 @@ const SprintBox = () => {
 };
 const ReleaseBox = () => {
   return (
-    <div className="box">
+    <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
+      <form>
+        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Release Notes Submission (DevOps Leads)</h5>
+        <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your release notes for the sprint. At the end of the sprint, it will be posted here! </h8>
+        <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>1) Overview:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+          <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Solution:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+
+        <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) End-User Impact:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+
+        <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Support Impacts:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+
+        <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Collaboration Opportunities:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+
+        <div style={{marginTop: 40}}>
+          <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Notes:</h9>
+        </div>
+        <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20, paddingBottom: 30}}id="textarea" contenteditable="true">
+          <ul>
+              <li></li>
+          </ul>
+        </section>
+
+      </form>
+
+      <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
+        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
+          SUBMIT
+        </button>
+      </div>
+
+      
     </div>
   );
 };
 const BlockerBox = () => {
-  const[isEnterClicked, setEnterClicked] = useState(false);
-  const[eColor, setEColor] = useState('white');
-  const [corrPassword, setPassword] = useState(false);
-  const password = 'beertech2021!!!';
+  // const[isEnterClicked, setEnterClicked] = useState(false);
+  // const[eColor, setEColor] = useState('white');
+  // const [corrPassword, setPassword] = useState(false);
+  // const password = 'beertech2021!!!';
   
-  const eHandler = () => {
-    var userInput = window.prompt("You must be a beertech employee to enter a blocker.\nTo verify your identity, please enter the password:");
+  // const eHandler = () => {
+  //   var userInput = window.prompt("You must be a beertech employee to enter a blocker.\nTo verify your identity, please enter the password:");
 
-    if(userInput === password){
-        setEnterClicked(!isEnterClicked);
-        setPassword(true);
-    } else {
-      alert("Incorrect password entered! Please try again.");
+  //   if(userInput === password){
+  //       setEnterClicked(!isEnterClicked);
+  //       setPassword(true);
+  //   } else {
+  //     alert("Incorrect password entered! Please try again.");
+  //   }
+
+  // }
+
+  // const eColorHandler = () => {
+  //   if(eColor === 'white'){
+  //       setEColor('pink');
+  //   }
+  // }
+
+  const [mColor, setMColor] = useState('white');
+  const [isMClicked, setMClicked] = useState(false);
+  const [rColor, setRColor] = useState('white');
+  const [isRClicked, setRClicked] = useState(false);
+
+
+
+    const mHandler = () => {
+      setMClicked(!isMClicked);
+      if(mColor == '#eaeaec'){
+        setMColor('white');
+      }
+      if(mColor != '#eaeaec') {
+        setMColor('#eaeaec');
+      }
     }
 
-  }
-
-  const eColorHandler = () => {
-    if(eColor === 'white'){
-        setEColor('pink');
+    const rHandler = () => {
+      setRClicked(!isRClicked);
+      if(rColor == '#eaeaec'){
+        setRColor('white');
+      }
+      if(rColor != '#eaeaec') {
+        setRColor('#eaeaec');
+      }
     }
-  }
+
 
   return (
-    <div>
+    <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
+      <div>
+        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Blockers Submission (DevOps Leads)</h5>
+        <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your blockers for the sprint! </h8>
+      </div>
 
-<div className="box">
+      <button style={{backgroundColor: mColor, border: '1px solid lightgray', width: 180, padding:10, borderRadius: 10, fontSize: 16, marginLeft: 100, marginTop: 31}} onClick = {mHandler}>
+        Choose a Task   &nbsp;  ▼
+      </button>
+
+      { isMClicked && (
+        <div>
+        <div style={{marginLeft: 100, marginTop: 15}}>
+              <div style={{padding: 5}}> 
+                  <input type="checkbox" name="vehicle" id="option1" value="" />
+                  <label for="option2">Solve data elements issue</label>
+              </div>
+              <div style={{padding: 5}}> 
+                  <input type="checkbox" name="vehicle" id="option2" />
+                  <label  for="option2">Remove carrier from shipment when it has been unassigned in TMS</label>
+              </div>
+              <div style={{padding: 5}}> 
+                <input type="checkbox" name="vehicle" id="option3" />
+                <label for="option2">Option to delete materials inventory</label>
+            </div>
+            <div style={{padding: 5}}> 
+              <input type="checkbox" name="vehicle" id="option4" />
+              <label for="option2">Update LucidCharts with forecasting architecture</label>
+            </div>
+         <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option3" />
+            <label for="option2">Figure out what data already exists in snowflake</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label for="option2">   Incorporate BeerInfo Modal to Create/Edit shipment screen</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label for="option2">  Modify UpdateShipment to include BeerAuth Tables</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label for="option2"> Create domain entries for OnePortal prod</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label  for="option2">Defective cooperage claim initial setup</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label  for="option2">Enable click to select - RAs</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label  for="option2">Implement ONP Flag</label>
+          </div>
+  </div>
+</div>
+      )}
+
+      <div>
+      <button style={{backgroundColor: rColor, border: '1px solid lightgray', width: 180, padding:10, borderRadius: 10, fontSize: 16, marginLeft: 100, marginTop: 31}} onClick = {rHandler}>
+        Choose a Reason   &nbsp;  ▼
+      </button>
+
+      { isRClicked && (
+        <div>
+        <div style={{marginLeft: 100, marginTop: 15}}>
+              <div style={{padding: 5}}> 
+                  <input type="checkbox" name="vehicle" id="option1" value="" />
+                  <label for="option2">Task is harder than anticipated</label>
+              </div>
+              <div style={{padding: 5}}> 
+                  <input type="checkbox" name="vehicle" id="option2" />
+                  <label  for="option2">Team member is affected by Covid/personal circumstances</label>
+              </div>
+              <div style={{padding: 5}}> 
+                <input type="checkbox" name="vehicle" id="option3" />
+                <label for="option2">Missing information/resources</label>
+            </div>
+            <div style={{padding: 5}}> 
+              <input type="checkbox" name="vehicle" id="option4" />
+              <label for="option2">Too much technical complexity</label>
+            </div>
+         <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option3" />
+            <label for="option2">Need to rework task</label>
+          </div>
+          <div style={{padding: 5}}> 
+            <input type="checkbox" name="vehicle" id="option2" />
+            <label for="option2">Other (specify in note)</label>
+          </div>
+  </div>
+</div>
+      )}
+
+      </div>
+
+      <div style={{marginTop: 30}}>
+        <h9 style={{marginLeft: 100, marginTop: 30, fontWeight: 'bold', fontSize: 16}}>Notes:</h9>
+      </div>
+
+      <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+          <ul>
+          </ul>
+        </section>
+
+
+  <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
+        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}} onClick = {mHandler}>
+          SUBMIT
+        </button>
+  </div>
+
+  </div>
+
+  );
+
+
+{/* <div className="box">
             <button onClick = {() => {eHandler(); }} style = {{bottom: '91%', right: 50, position: 'absolute', border: '1px solid darkmagenta', 
             fontSize: '18px', height: '40px', width: '200px', backgroundColor: eColor}} className = 'enterButton'> Enter blocker</button>
     <div>
@@ -106,11 +317,7 @@ const BlockerBox = () => {
 <input type="password" size="25" />
 </div>
     
-    </div>
-
-
-    </div>
-  );
+    </div> */}
 };
 const KPIBox = () => {
   return (
@@ -122,11 +329,6 @@ const KPIBox = () => {
     </div>
   );
 };
-const NPSBox = () => {
-  return (
-    <div className="box"></div>
-  );
-};
 const TargetBox = () => {
   return (
     <div className="box"></div>
@@ -134,7 +336,52 @@ const TargetBox = () => {
 };
 const RevBox = () => {
   return (
-    <div className="box"></div>
+    <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
+    <form>
+      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Review Submission (DevOps Leads)</h5>
+      <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your review for the sprint. At the end of the sprint, it will be posted here! </h8>
+      <div style={{marginTop: 40}}>
+        <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>1) What went well during this Sprint? </h9>
+      </div>
+      <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+        <ul>
+            <li></li>
+        </ul>
+      </section>
+        <div style={{marginTop: 40}}>
+        <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) What challenges did you experience during this Sprint?</h9>
+      </div>
+      <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+        <ul>
+            <li></li>
+        </ul>
+      </section>
+
+      <div style={{marginTop: 40}}>
+        <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Shout-outs:</h9>
+      </div>
+      <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+        <ul>
+            <li></li>
+        </ul>
+      </section>
+
+      <div style={{marginTop: 40}}>
+        <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>2) Additional Info:</h9>
+      </div>
+      <section style={{border: '1px solid lightgray', width: 900, minHeight: 150, height: 'auto', borderRadius: 10, marginLeft: 100, marginTop: 20}}id="textarea" contenteditable="true">
+        <ul>
+            <li></li>
+        </ul>
+      </section>
+
+    </form>
+    <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
+        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
+          SUBMIT
+        </button>
+      </div>
+  </div>
   );
 };
 export {
@@ -142,7 +389,6 @@ export {
   ReleaseBox,
   BlockerBox,
   KPIBox,
-  NPSBox,
   TargetBox,
   RevBox
 }
