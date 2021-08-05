@@ -331,7 +331,10 @@ const KPIBox = () => {
 };
 const TargetBox = () => {
   return (
-    <div className="box"></div>
+    <div className="box">
+      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>OnePortal Targets</h5>
+      <img style={{height: '80%', width: '70%', marginLeft: 50, marginTop: -20}} src = {'https://i.ibb.co/f1NCMbw/ado-targets.png'}></img>
+    </div>
   );
 };
 const RevBox = () => {
