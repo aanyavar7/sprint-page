@@ -10,7 +10,7 @@ const BI360 = () => {
 
   return (
     <div style={{paddingLeft: 90}}>
-       <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: 'darkmagenta'}}>
+       <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: '#383e82'}}>
         <h1>BI360</h1>
       </div>
       <div>

@@ -37,33 +37,65 @@ const SprintBox = () => {
     }
 
     return (
-    <div className="box">
+      <div>
+
+<div className="box">
       <div style={{display: 'flex'}}>
         {/* <h4>We are on Day</h4>
         <p>7</p>*/}
-        <h5 style={{marginLeft: 100, marginTop: 37}}>{textTitle}</h5>
-        <p style={{marginTop: 37}}>{sprintNumber}</p>
+        <h5 style={{marginLeft: 100, marginTop: 37, fontWeight: 500}}>{textTitle}</h5>
+        <p style={{marginTop: 37, fontWeight: 500}}>{sprintNumber}</p>
       
       </div>
 
-        <h6 style={{marginTop: -50, marginRight: 100, backgroundColor: 'whitesmoke', paddingTop: 10, paddingBottom: 8, paddingLeft: 18, paddingRight: 18, border: "none", borderRadius: 10}}>Sprint {sprintNumber}</h6>
+        <h6 style={{marginTop: -50, marginRight: 100, backgroundColor: 'whitesmoke', paddingTop: 10, paddingBottom: 8, paddingLeft: 18, paddingRight: 18, border: "none", borderRadius: 10, fontWeight: 500}}>Sprint {sprintNumber}</h6>
           <button onClick= {() => leftClickHandler()}
-          style={{float: 'right', paddingLeft: 2, paddingRight: 2, borderRight: 'none', backgroundColor: 'white', marginTop: -50, marginRight: 300, fontSize: 27, fontWeight: 'bold', color: 'darkmagenta', border: 'none'}}> ᐸ
+          style={{float: 'right', paddingLeft: 2, paddingRight: 2, borderRight: 'none', backgroundColor: 'white', marginTop: -50, marginRight: 300, fontSize: 27, fontWeight: 'bold', color: '#383e82', border: 'none'}}> ᐸ
           </button>
           <button onClick= {() => rightClickHandler()}
-          style={{float: 'right', paddingLeft: 2, paddingRight: 2, backgroundColor: 'white', marginTop: -50, marginRight: 130, fontSize: 27, fontWeight: 'bold', color: 'darkmagenta', border: 'none'}}> ᐳ
+          style={{float: 'right', paddingLeft: 2, paddingRight: 2, backgroundColor: 'white', marginTop: -50, marginRight: 130, fontSize: 27, fontWeight: 'bold', color: '#383e82', border: 'none'}}> ᐳ
           </button>
 
       <img style={{height: '80%', width: '70%', marginLeft: 20, marginTop: -30}} src = {imgSrc}></img>
 
+      <div style={{marginLeft: 1200}}>
+        <h2>HI BITCH</h2>
+      </div>
+
     </div>
+
+    <div style={{width: 210, marginLeft: 1180, boxShadow: 'none', paddingLeft: 30, marginRight: 30}} className ="box">
+<h5 style={{marginTop: 37, fontWeight: 500, fontSize: 18, marginBottom: 10}}>Key Updates:</h5>
+<div style={{marginBottom: 10}}>
+<h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify', paddingRight: 30}}>
+<b>• Trade Returns Rollout:</b> Onboarded 3 WSLR's last week. Remaining 5 WSLR's have requested to be moved to this &nbsp; week to better accommodate schedules.
+</h8>
+</div>
+
+<div style={{marginBottom: 10}}>
+<h8 style={{fontSize: 13, textAlign: 'justify'}}>
+<b>• Trade Returns Development:</b> &nbsp; &nbsp; 4 critical features left before national roll-out can begin (2 in progress). Details below.
+</h8>
+</div>
+
+<div style={{marginBottom: 10}}>
+<h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+<b>• OnePortal Re-Platform Roadmap:</b> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Investment committee has approved onboarding an &nbsp; additional development pod to accelerate OnePortal timelines. &nbsp; The goal is to re-platform off of salesforce by end of 2021. The OnePortal product owner and devops lead are coordinating w/ leadership to provide timelines based upon funding/resources. Final review scheduled for 7/21 then new timelines will be distributed across the OnePortal Wiki and in this update.
+</h8>
+</div>
+
+</div>
+
+
+
+      </div>
     );
 };
 const ReleaseBox = () => {
   return (
-    <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
+    <div style={{overflow: 'auto'}} className="box">
       <form>
-        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Release Notes Submission (DevOps Leads)</h5>
+        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30, fontWeight: 500}}>Sprint Release Notes Submission</h5>
         <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your release notes for the sprint. At the end of the sprint, it will be posted here! </h8>
         <div style={{marginTop: 40}}>
           <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>1) Overview:</h9>
@@ -121,12 +153,11 @@ const ReleaseBox = () => {
       </form>
 
       <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
-        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
+        <button style={{fontWeight: 'bold', backgroundColor: '#383e82', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
           SUBMIT
         </button>
       </div>
 
-      
     </div>
   );
 };
@@ -185,7 +216,7 @@ const BlockerBox = () => {
   return (
     <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
       <div>
-        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Blockers Submission (DevOps Leads)</h5>
+        <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30, fontWeight: 500}}>Sprint Blockers Submission</h5>
         <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your blockers for the sprint! </h8>
       </div>
 
@@ -293,10 +324,32 @@ const BlockerBox = () => {
 
 
   <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
-        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}} onClick = {mHandler}>
+        <button style={{fontWeight: 'bold', backgroundColor: '#383e82', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}} onClick = {mHandler}>
           SUBMIT
         </button>
   </div>
+
+  {/* <div style={{width: 210, marginLeft: 1180, marginTop: -45, boxShadow: 'none', paddingLeft: 30, marginRight: 10}} className ="box">
+      <h5 style={{marginTop: 37, fontWeight: 500, fontSize: 18, marginBottom: 10}}>Key Updates:</h5>
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Trade Returns Rollout:</b> Onboarded 3 WSLR's last week. Remaining 5 WSLR's have requested to be moved to this week to better accommodate schedules.
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Trade Returns Development:</b>  &nbsp; 4 critical features left before national roll-out can begin (2 in progress). Details below.
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• OnePortal Re-Platform Roadmap:</b> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Investment committee has approved onboarding an additional development pod to accelerate OnePortal timelines. The goal is to re-platform off of salesforce by end of 2021. The OnePortal product owner and devops lead are coordinating w/ leadership to provide timelines based upon funding/resources. Final review scheduled for 7/21 then new timelines will be distributed across the OnePortal Wiki and in this update.
+      </h8>
+      </div>
+
+      </div> */}
 
   </div>
 
@@ -304,7 +357,7 @@ const BlockerBox = () => {
 
 
 {/* <div className="box">
-            <button onClick = {() => {eHandler(); }} style = {{bottom: '91%', right: 50, position: 'absolute', border: '1px solid darkmagenta', 
+            <button onClick = {() => {eHandler(); }} style = {{bottom: '91%', right: 50, position: 'absolute', border: '1px solid #383e82', 
             fontSize: '18px', height: '40px', width: '200px', backgroundColor: eColor}} className = 'enterButton'> Enter blocker</button>
     <div>
       {corrPassword && (
@@ -321,19 +374,69 @@ const BlockerBox = () => {
 };
 const KPIBox = () => {
   return (
-    <div className="box" style={{backgroundColor: '#171d31'}}>
+    <div>
+       <div className="box" style={{backgroundColor: '#171d31'}}>
       <div>
       <img style ={{width: 1075, height: 'auto', borderRadius: 25, display: 'block', marginLeft: 'auto', marginRight: 'auto', marginTop: -1}} src={"https://i.ibb.co/yh4YP6Q/oneportal-kpi.png"}></img>
       </div>
+
+    </div>
+
+<div style={{width: 210, marginLeft: 1180, boxShadow: 'none', paddingLeft: 30, marginRight: 10}} className ="box">
+      <h5 style={{marginTop: 37, fontWeight: 500, fontSize: 18, marginBottom: 20}}>Key KPIs:</h5>
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• OTR Revlog Freight Cost</b>
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Freight Optimization</b>  &nbsp;
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Materials Planning</b>
+      </h8>
+      </div>
+
+      </div>
+
 
     </div>
   );
 };
 const TargetBox = () => {
   return (
-    <div className="box">
-      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>OnePortal Targets</h5>
+    <div>
+          <div className="box">
+      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30, fontWeight: 500}}>OnePortal Targets</h5>
       <img style={{height: '80%', width: '70%', marginLeft: 50, marginTop: -20}} src = {'https://i.ibb.co/f1NCMbw/ado-targets.png'}></img>
+    </div>
+
+
+<div style={{width: 210, marginLeft: 1180, boxShadow: 'none', paddingLeft: 30, marginRight: 10}} className ="box">
+      <h5 style={{marginTop: 37, fontWeight: 500, fontSize: 18, marginBottom: 10}}>2021 Agenda:</h5>
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>1) Trade Returns: </b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Trade returns is the process by which WSLR's return &nbsp; &nbsp; warehousing materials (pallets, kegs, etc…) and damaged &nbsp; products (freights claims) to our breweries/DC's.
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflow: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>2) Replatform </b></h8>
+      </div>
+
+      <div style={{marginBottom: 20}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto'}}>
+      <b>3) OnePortal National Rollout:</b> &nbsp;  &nbsp; As OnePortal has redesigned &nbsp; &nbsp; their platform, wholesalers need &nbsp; &nbsp; to learn how to use it and developers need to get feedback from them.
+      </h8>
+      </div>
+
+      </div>
     </div>
   );
 };
@@ -341,7 +444,7 @@ const RevBox = () => {
   return (
     <div style={{overflowX: 'hidden', overflowY: 'auto'}} className="box">
     <form>
-      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30}}>Sprint Review Submission (DevOps Leads)</h5>
+      <h5 style={{marginLeft: 100, marginTop: 37, marginBottom: 30, fontWeight: 500}}>Sprint Review Submission</h5>
       <h8 style={{marginLeft: 100, marginBottom: 100}}>Use this form to submit your review for the sprint. At the end of the sprint, it will be posted here! </h8>
       <div style={{marginTop: 40}}>
         <h9 style={{marginLeft: 100, marginTop: 10, fontWeight: 'bold', fontSize: 16}}>1) What went well during this Sprint? </h9>
@@ -380,9 +483,30 @@ const RevBox = () => {
 
     </form>
     <div style={{MozMarginStart: 100, marginBottom: 20, marginTop: 10}}>
-        <button style={{fontWeight: 'bold', backgroundColor: 'darkmagenta', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
+        <button style={{fontWeight: 'bold', backgroundColor: '#383e82', border: 'none', color: 'white', width: 100, padding:10, borderRadius: 10, fontSize: 16, letterSpacing: '0.2mm', marginLeft: 100, marginTop: 10}}>
           SUBMIT
         </button>
+      </div>
+      <div style={{width: 210, marginLeft: 1420, marginTop: -45, boxShadow: 'none', paddingLeft: 30, marginRight: 10}} className ="box">
+      <h5 style={{marginTop: 37, fontWeight: 500, fontSize: 18, marginBottom: 10}}>Key Updates:</h5>
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Trade Returns Rollout:</b> Onboarded 3 WSLR's last week. Remaining 5 WSLR's have requested to be moved to this week to better accommodate schedules.
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• Trade Returns Development:</b>  &nbsp; 4 critical features left before national roll-out can begin (2 in progress). Details below.
+      </h8>
+      </div>
+
+      <div style={{marginBottom: 10}}>
+      <h8 style={{fontSize: 13, overflowX: 'hidden', overflowY: 'auto', textAlign: 'justify'}}>
+      <b>• OnePortal Re-Platform Roadmap:</b> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Investment committee has approved onboarding an additional development pod to accelerate OnePortal timelines. The goal is to re-platform off of salesforce by end of 2021. The OnePortal product owner and devops lead are coordinating w/ leadership to provide timelines based upon funding/resources. Final review scheduled for 7/21 then new timelines will be distributed across the OnePortal Wiki and in this update.
+      </h8>
+      </div>
+
       </div>
   </div>
   );

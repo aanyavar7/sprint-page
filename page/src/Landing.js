@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <div style={{paddingLeft: 90}} className = "bg">
     <div style={{bottom: '89%', left: 190, position: 'absolute', fontSize: 20, color: 'black', letterSpacing: '0.5mm'}}>
-     <h1>Sprint Page</h1>
+     <h1 style={{fontWeight:500}}>Sprint Page</h1>
    </div>
    <div>
    {/* <Question /> */}

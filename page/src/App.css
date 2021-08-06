@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+
+}
+
 
 pre{
     display:inline;
@@ -62,7 +66,9 @@ Link{
   body {
     background-size: cover;
     zoom: 0.88;
-    background-color: white;
+    background-color: whitesmoke;
+    position: 'relative';
+    font-family: "Helvetica Neue", Arial, sans-serif;
   }
 
   .boxShadow {
@@ -70,9 +76,11 @@ Link{
   }
 
   .bShadow {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   }
 
-  .link:hover { color: darkmagenta!important; }
+  .link:hover { color: #383e82!important; }
 
   .link:visited { color: black; }
+
+  .link:active {color:  #383e82!important; }

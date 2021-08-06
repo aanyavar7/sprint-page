@@ -29,7 +29,7 @@ const NavBar = () => {
   const [isTarget, setTarget] = useState(false);
   const [isHapp, setHapp] = useState(false);
 
-  const [sprintColor, setSprintColor] = useState("#f0dcfc");
+  const [sprintColor, setSprintColor] = useState("#dce0fc");
   const [releaseColor, setReleaseColor] = useState("white");
   const [blockerColor, setBlockerColor] = useState("white");
   const [KPIColor, setKPIColor] = useState("white");
@@ -64,7 +64,7 @@ const NavBar = () => {
     setHapp(false);
 
     if (sprintColor == "white") {
-      setSprintColor("#f0dcfc");
+      setSprintColor("#dce0fc");
       setReleaseColor("white");
       setBlockerColor("white");
       setKPIColor("white");
@@ -86,7 +86,7 @@ const NavBar = () => {
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
-    if (sprintColor == "#f0dcfc") {
+    if (sprintColor == "#dce0fc") {
       setSprintColor("white");
       setSprintBorder("0px");
       setSprintFont("dimgray");
@@ -104,7 +104,7 @@ const NavBar = () => {
 
     if (releaseColor == "white") {
 
-      setReleaseColor("#f0dcfc");
+      setReleaseColor("#dce0fc");
 
       setSprintColor("white");
       setBlockerColor("white");
@@ -128,7 +128,7 @@ const NavBar = () => {
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
-    if (releaseColor == "#f0dcfc") {
+    if (releaseColor == "#dce0fc") {
       setReleaseColor("white");
       setReleaseBorder("0px");
       setReleaseFont("dimgray");
@@ -147,7 +147,7 @@ const NavBar = () => {
 
     if (blockerColor == "white") {
 
-      setBlockerColor("#f0dcfc");
+      setBlockerColor("#dce0fc");
 
       setSprintColor("white");
       setReleaseColor("white");
@@ -171,7 +171,7 @@ const NavBar = () => {
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
-    if (blockerColor == "#f0dcfc") {
+    if (blockerColor == "#dce0fc") {
       setBlockerColor("white");
       setBlockerBorder("0px");
       setBlockerFont("dimgray");
@@ -190,7 +190,7 @@ const NavBar = () => {
 
     if (KPIColor == "white") {
 
-      setKPIColor("#f0dcfc");
+      setKPIColor("#dce0fc");
 
       setSprintColor("white");
       setReleaseColor("white");
@@ -214,7 +214,7 @@ const NavBar = () => {
       setTargetFont("dimgray");
       setHappFont("dimgray");
     }
-    if (KPIColor == "#f0dcfc") {
+    if (KPIColor == "#dce0fc") {
       setKPIColor("white");
       setKPIBorder("0px");
       setKPIFont("dimgray");
@@ -233,7 +233,7 @@ const NavBar = () => {
 
     if (targetColor == "white") {
 
-      setTargetColor("#f0dcfc");
+      setTargetColor("#dce0fc");
 
       setSprintColor("white");
       setReleaseColor("white");
@@ -257,7 +257,7 @@ const NavBar = () => {
       setKPIFont("dimgray");
       setHappFont("dimgray")
     }
-    if (targetColor == "#f0dcfc") {
+    if (targetColor == "#dce0fc") {
       setTargetColor("white");
       setTargetBorder("0px");
       setTargetFont("dimgray");
@@ -277,7 +277,7 @@ const NavBar = () => {
 
     if (happColor == "white") {
 
-      setHappColor("#f0dcfc");
+      setHappColor("#dce0fc");
 
       setSprintColor("white");
       setReleaseColor("white");
@@ -304,7 +304,7 @@ const NavBar = () => {
 
       setTargetFont("dimgray")
     }
-    if (happColor == "#f0dcfc") {
+    if (happColor == "#dce0fc") {
       setHappColor("white");
       setHappBorder("0px");
       setHappFont("dimgray");
@@ -313,7 +313,7 @@ const NavBar = () => {
 
   return (
     <div className="App">
-      <div style={{width: 1000, position: 'absolute', bottom: '82%', left: 440, paddingLeft: 270, marginTop: 80}}>
+      <div style={{width: 1000, position: 'absolute', bottom: '82%', left: 440, paddingLeft: 238, marginTop: 80}}>
         <button
           style={{
             backgroundColor: sprintColor,

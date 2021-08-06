@@ -19,8 +19,9 @@ import "./App.css";
 const App = () => {
   const [isQClicked, setQClicked] = useState(false);
   const [qColor, setQColor] = useState('white');
-  const [mColor, setMColor] = useState('white');
+  const [mColor, setMColor] = useState('snow');
   const [isMClicked, setMClicked] = useState(false);
+  const [pColor, setPColor] = useState('black');
 
     const qHandler = () => {
         setQClicked(!isQClicked);
@@ -37,17 +38,31 @@ const App = () => {
 
     const mHandler = () => {
       setMClicked(!isMClicked);
-      if(mColor == 'darkmagenta'){
-        setMColor('white');
+      if(mColor == '#383e82'){
+        setMColor('snow');
       }
-      if(mColor != 'darkmagenta') {
-        setMColor('darkmagenta');
+      if(mColor != '#383e82') {
+        setMColor('#383e82');
       }
+    }
+
+    const pHandler = () => {
+      if(pColor == 'black'){
+        setMColor('#383e82');
+      }
+      if(mColor != '#383e82') {
+        setMColor('#383e82');
+      }
+    }
+
+    const turnM = () => {
+      setMClicked(false);
     }
 
   return (
     <div className = "App">
-      <div style={{backgroundColor: '#f3ecf3', borderRadius: 25, marginTop: 2, width: '114vw', height: 100, marginBottom: 10}}>
+      <div>
+      <div style={{backgroundColor: 'white', borderBottom: '0.5px solid gainsboro', borderRadius: 25, marginTop: 2, width: '114vw', height: 100, marginBottom: 10}}>
       <Router>
       <div>
            {/* <Link to= "/Help"> <button onClick = {() => {qHandler(); qColorHandler();}} style={{backgroundColor: qColor}} className = "qButton">?</button></Link> */}
@@ -58,57 +73,57 @@ const App = () => {
       </Route> }
         )*/}
       <button className = "bShadow" style = {{backgroundColor: mColor, border: 'none', borderRadius: 100, height: 65, width: 65, marginLeft: 15, marginTop: 20, marginBottom: 10, }} onClick = {mHandler}>
-        <img src= "https://i.ibb.co/WWxQ6Xs/menu-removebg-preview-2.png" alt="menu-removebg-preview-2" alt = "my image" style = {{height: 65, width: 65, marginLeft: -5}}></img>
+        <img src= "https://i.ibb.co/Wg9P0z7/output-onlinepngtools-28.png" alt="menu-removebg-preview-2" alt = "my image" style = {{height: 65, width: 65, marginLeft: -5}}></img>
       </button>
 
       {isMClicked && (
         <div className = "boxShadow" style={{borderRadius: 25, width: 160, height: 450, paddingTop: 20, marginLeft: 20, zIndex: 1000, marginTop: -5, paddingHorizontal: 15, backgroundColor: 'white', border: '0.5px solid lightgray'}}>
         <div style={{marginLeft: -40, marginTop: 10, marginBottom: 10}}>
-            <Link className = "link" to="/"><h2>Overall </h2></Link>
+            <Link onClick = {turnM} className = "link" to="/"><h2>Overall </h2></Link>
           </div>
           <hr className = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-            <Link className = "link"to="/BI360"><h2>BI360 </h2></Link>
+            <Link onClick ={turnM} onMouseOver={pHandler} className = "link"to="/BI360"><h2 style={{color: pColor}}>BI360 </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-            <Link className = "link"to="/FUSION"><h2>FUSION </h2></Link>
+            <Link onClick ={turnM}className = "link"to="/FUSION"><h2>FUSION </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-            <Link className = "link"to="/Hero"><h2>Hero </h2></Link>
+            <Link onClick ={turnM}className = "link"to="/Hero"><h2>Hero </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/Labyrinth"><h2>Labyrinth </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/Labyrinth"><h2>Labyrinth </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/Legend"><h2>Legend </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/Legend"><h2>Legend </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/LOLA"><h2>LOLA </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/LOLA"><h2>LOLA </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/OnePortal"><h2>OnePortal </h2></Link>
+          <Link onClick ={turnM} className = "link"to="/OnePortal"><h2>OnePortal </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/PVA"><h2>PVA </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/PVA"><h2>PVA </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/RADAR"><h2>RADAR </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/RADAR"><h2>RADAR </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/SCA"><h2>SCA </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/SCA"><h2>SCA </h2></Link>
           </div>
           <hr class = "boxline" />
           <div style={{marginLeft: -40, marginTop: 5, marginBottom: 5}}>
-          <Link className = "link"to="/SMMI"><h2>SMMI </h2></Link>
+          <Link onClick ={turnM}className = "link"to="/SMMI"><h2>SMMI </h2></Link>
           </div>
       </div>
       )}
@@ -153,10 +168,13 @@ const App = () => {
 
     </Switch>
     </Router>
+    {/* <div style={{left: 1540, bottom: '97%', position: 'absolute'}}><img style={{width: 80, height: 'auto', position: 'absolute'}} src={'https://i.ibb.co/0MSwZTY/Screen-Shot-2021-08-06-at-2-46-33-AM.png'}></img></div> */}
+{/* 
+    <div class="footer" style={{top: '93%', position: 'absolute'}}>
+    <img style={{float: 'left', marginLeft: 10, width: 60, height: 'auto'}} src={'https://i.ibb.co/BztsT25/Microsoft-Teams-image-4.png'}></img>
+  </div> */}
+      </div>
   </div>
-
-
-
       </div>
   );
 }

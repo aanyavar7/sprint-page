@@ -16,7 +16,7 @@ const NavBar = () => {
   const [isKPI, setKPI] = useState(false);
   const [isTarget, setTarget] = useState(false);
 
-  const [sprintColor, setSprintColor] = useState("#f0dcfc");
+  const [sprintColor, setSprintColor] = useState("#dce0fc");
   const [KPIColor, setKPIColor] = useState("white");
   const [targetColor, setTargetColor] = useState("white");
 
@@ -35,7 +35,7 @@ const NavBar = () => {
     setKPI(false);
 
     if (sprintColor == "white") {
-      setSprintColor("#f0dcfc");
+      setSprintColor("#dce0fc");
       setKPIColor("white");
       setTargetColor("white");
 
@@ -48,7 +48,7 @@ const NavBar = () => {
       setKPIFont("dimgray");
       setTargetFont("dimgray");
     }
-    if (sprintColor == "#f0dcfc") {
+    if (sprintColor == "#dce0fc") {
       setSprintColor("white");
       setSprintBorder("0px");
       setSprintFont("dimgray");
@@ -65,7 +65,7 @@ const NavBar = () => {
 
     if (KPIColor == "white") {
 
-      setKPIColor("#f0dcfc");
+      setKPIColor("#dce0fc");
 
       setSprintColor("white");
       setTargetColor("white");
@@ -80,7 +80,7 @@ const NavBar = () => {
       setSprintFont("dimgray");
       setTargetFont("dimgray");
     }
-    if (KPIColor == "#f0dcfc") {
+    if (KPIColor == "#dce0fc") {
       setKPIColor("white");
       setKPIBorder("0px");
       setKPIFont("dimgray");
@@ -96,7 +96,7 @@ const NavBar = () => {
 
     if (targetColor == "white") {
 
-      setTargetColor("#f0dcfc");
+      setTargetColor("#dce0fc");
 
       setSprintColor("white");
       setKPIColor("white");
@@ -111,7 +111,7 @@ const NavBar = () => {
       setSprintFont("dimgray");
       setKPIFont("dimgray");
     }
-    if (targetColor == "#f0dcfc") {
+    if (targetColor == "#dce0fc") {
       setTargetColor("white");
       setTargetBorder("0px");
       setTargetFont("dimgray");
@@ -120,7 +120,7 @@ const NavBar = () => {
 
   return (
     <div className="App">
-      <div style={{width: 1000, position: 'absolute', bottom: '82%', left: 440, paddingLeft: 720}}>
+      <div style={{width: 1000, position: 'absolute', bottom: '82%', left: 440, paddingLeft: 600}}>
         <button
           style={{
             backgroundColor: sprintColor,

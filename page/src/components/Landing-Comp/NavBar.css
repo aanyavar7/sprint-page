@@ -80,14 +80,14 @@
 h4 {
   font-size: 25px;
   margin-left: 50px;
-  color: darkmagenta
+  color: #383e82
 }
 
 h5{
   font-size: 25px;
   margin-left: 9px;
   margin-top: 32px;
-  color: darkmagenta
+  color: #383e82
 }
 
 p {
@@ -95,7 +95,7 @@ p {
   margin-left: 10px;
   margin-top: 32px;
   font-weight: bold;
-  color: darkmagenta;
+  color: #383e82;
   text-decoration: underline
 }
 

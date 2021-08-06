@@ -9,7 +9,7 @@ const OnePortal = () => {
     return (
       <div style={{paddingLeft: 90}} className = "bg">
       <div style={{bottom: '89%', left: 190, position: 'absolute', fontSize: 20, color: 'black', letterSpacing: '0.5mm'}}>
-       <h1>OnePortal</h1>
+       <h1 style={{fontWeight:500, color: 'black'}}>OnePortal</h1>
      </div>
      <div>
      {/* <Question /> */}

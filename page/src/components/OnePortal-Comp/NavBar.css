@@ -59,15 +59,19 @@
 }
 
 .box {
-  border: solid 0.5px lightgray !important;
+  border:none!important;
   border-radius: 25px;
-  height:650px!important;
+  height:650px;
   margin-bottom: 300px!important;
-  position: absolute;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100vh;
   top: 48px;
-  margin-right: 200px;
+  width: 1150px;
+  margin-right: 400px;
   background-color: white;
-  box-shadow: 0 1px 1px 0 rgb(118 135 154 / 24%), 0 3px 8px 0 rgb(118 135 154 / 8%)
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 };
 
 .enterButton {
@@ -80,14 +84,14 @@
 h4 {
   font-size: 25px;
   margin-left: 80px;
-  color: darkmagenta
+  color: #383e82
 }
 
 h5{
   font-size: 25px;
   margin-left: 9px;
   margin-top: 32px;
-  color: darkmagenta
+  color: #383e82
 }
 
 p {
@@ -95,7 +99,7 @@ p {
   margin-left: 10px;
   margin-top: 32px;
   font-weight: bold;
-  color: darkmagenta;
+  color: #383e82;
   text-decoration: underline
 }
 

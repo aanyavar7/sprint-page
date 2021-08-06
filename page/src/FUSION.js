@@ -7,7 +7,7 @@ import NavBar from "./components/FUSION-Comp/NavBar.js"
 const FUSION = () => {
     return (
       <div style={{paddingLeft: 90}}>
-      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: 'darkmagenta'}}>
+      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: '#383e82'}}>
        <h1>FUSION</h1>
      </div>
      <div>

@@ -7,7 +7,7 @@ import NavBar from "./components/RADAR-Comp/NavBar.js"
 const RADAR = () => {
     return (
       <div style={{paddingLeft: 90}}>
-      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: 'darkmagenta'}}>
+      <div style={{bottom: '88%', left: 140, position: 'absolute', fontSize: 26, color: '#383e82'}}>
        <h1>RADAR</h1>
      </div>
      <div>
