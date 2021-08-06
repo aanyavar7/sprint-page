@@ -169,10 +169,10 @@ const App = () => {
     </Switch>
     </Router>
     {/* <div style={{left: 1540, bottom: '97%', position: 'absolute'}}><img style={{width: 80, height: 'auto', position: 'absolute'}} src={'https://i.ibb.co/0MSwZTY/Screen-Shot-2021-08-06-at-2-46-33-AM.png'}></img></div> */}
-{/* 
-    <div class="footer" style={{top: '93%', position: 'absolute'}}>
-    <img style={{float: 'left', marginLeft: 10, width: 60, height: 'auto'}} src={'https://i.ibb.co/BztsT25/Microsoft-Teams-image-4.png'}></img>
-  </div> */}
+
+    <div class="footer" style={{top: '93%', position: 'absolute', backgroundColor: '#383e82', width: '114vw', padding: 3}}>
+    <img style={{float: 'left', marginLeft: 12, width: 60, height: 'auto', backgroundColor: '#'}} src={'https://i.ibb.co/BztsT25/Microsoft-Teams-image-4.png'}></img>
+  </div>
       </div>
   </div>
       </div>

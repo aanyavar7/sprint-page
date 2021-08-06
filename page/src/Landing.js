@@ -10,9 +10,12 @@ import "./App.css";
 const Landing = () => {
   return (
     <div style={{paddingLeft: 90}} className = "bg">
-    <div style={{bottom: '89%', left: 190, position: 'absolute', fontSize: 20, color: 'black', letterSpacing: '0.5mm'}}>
+    {/* <div style={{bottom: '89%', left: 190, position: 'absolute', fontSize: 20, color: 'black', letterSpacing: '0.5mm'}}>
      <h1 style={{fontWeight:500}}>Sprint Page</h1>
-   </div>
+   </div> */}
+    <div style={{bottom: '86%', left: 190, position: 'absolute', fontSize: 26, color: '#383e82'}}>
+       <h1>SPRINT PAGE</h1>
+     </div>
    <div>
    {/* <Question /> */}
    </div>

@@ -57,11 +57,6 @@ const SprintBox = () => {
           </button>
 
       <img style={{height: '80%', width: '70%', marginLeft: 20, marginTop: -30}} src = {imgSrc}></img>
-
-      <div style={{marginLeft: 1200}}>
-        <h2>HI BITCH</h2>
-      </div>
-
     </div>
 
     <div style={{width: 210, marginLeft: 1180, boxShadow: 'none', paddingLeft: 30, marginRight: 30}} className ="box">
